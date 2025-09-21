@@ -1,0 +1,73 @@
+
+<html lang="en">
+<head>
+    <title>from</title>
+    <style>
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        table{
+            margin:25px;
+            font-size: 1.3rem;
+            border: 1px solid black;
+            padding: 12px;
+        }
+        .inp{
+            height: 25px;
+            width:300px;
+        }
+        .btn{
+            height: 25px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form action="prectice28.php" method="post">
+        <table>
+            <tr>
+                <td colspan="2">
+                    <label for="name">Name<br>
+                        <input type="text" name="name" class="name inp">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="number">Mobile Number<br>
+                        <input type="number" name="number" class="number inp" maxlength="10" minlength="10">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="gender inp">Gender<br>
+                       <select name="gender" class="gender inp">
+                        <option value="Male">Male</option>
+                        <option value="feMale">feMale</option>
+                       </select>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="email">Email<br>
+                        <input type="email" name="email" class="email inp">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit" name="submit" class="btn"></td>
+                <td><input type="reset" value="reset" class="btn"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
